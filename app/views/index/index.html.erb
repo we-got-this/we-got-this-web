@@ -1,28 +1,36 @@
   
-<div class="jumbotron">
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading"><%= image_tag("we-got-this-logo.png", :style => 'height:2em;')%> WeGotThis!</h1>
-        <p class="lead">Welcome to WeGotThis, a website and application to help us get through isolation in covid-19 and support your wellbeing. </p>
 
-        <h2>Are you feeling isolated? Register below and someone will call you (we won't share your number)</p>
+<main role="main" class="inner cover">
+    
+  <div class="row">
+    <div class="col">
 
-        <p>The age of covid-19 has affected everyone around the world. We are all going through a lot right now, whether you are old or young, working or not, </p>
-        <p>wherever you are we want you to know that together <b>WeGotThis!</b>.</p>
-        <br/>
+      <h1 class="cover-heading"><%= image_tag("we-got-this-logo.png", :style => 'height:2em;')%> WeGotThis!</h1>
+      <p class="lead">Welcome to WeGotThis, a website and application to help us get through isolation in covid-19 and support your wellbeing. </p>
 
-        <p class="lead">Our chatbot will help you find resources, connect you to other people, enable you to volunteer to support your wellbeing and the wellbeing of others. </p>
-        <p>We hope you find WeGotThis helpful and we welcome suggestions, because we are all in this together and your ideas will definitely help others. </p>
-        
-        <%= image_tag("Chatbot.gif")%>
 
-        <p>Download WeGotThis!</p>
-        
-        
-        <h2>Feeling isolated?</h2>
+      <p>The age of covid-19 has affected everyone around the world. We are all going through a lot right now, whether you are old or young, working or not, </p>
+      <p>wherever you are we want you to know that together <b>WeGotThis!</b>.</p>
+      <br/>
 
-        <%= link_to 'Register', new_user_registration_path,  class:"btn btn-primary btn-lg light-blue"  %>
-        <br/>
-        <p>Already registered? <%= link_to 'Edit my details', root_path %></p>
-    </main>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p class="lead">Are you feeling isolated? Register below and someone will call you (we won't share your number)</p>
 
-</div>
+    <%= link_to 'Register', new_user_registration_path,  class:"btn btn-primary btn-lg light-blue"  %>
+    <br/>
+    <p>Already registered? <%= link_to 'Edit my details', root_path %></p>
+    </div>
+  <div class="col">
+
+      <p class="lead">Our chatbot will help you find resources, connect you to other people, enable you to volunteer to support your wellbeing and the wellbeing of others. </p>
+      <p>We hope you find WeGotThis helpful and we welcome suggestions, because we are all in this together and your ideas will definitely help others. </p>
+  
+    <%= image_tag("Chatbot.gif")%>
+    
+  </div>
+  </div>
+</main>
+
