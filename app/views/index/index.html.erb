@@ -4,33 +4,27 @@
     
   <div class="row">
     <div class="col">
-
       <h1 class="cover-heading"><%= image_tag("we-got-this-logo.png", :style => 'height:2em;')%> WeGotThis!</h1>
-      <p class="lead">Welcome to WeGotThis, a website and application to help us get through isolation in covid-19 and support your wellbeing. </p>
-
-
-      <p>The age of covid-19 has affected everyone around the world. We are all going through a lot right now, whether you are old or young, working or not, </p>
-      <p>wherever you are we want you to know that together <b>WeGotThis!</b>.</p>
-      <br/>
-
+      <p class="lead">Welcome to WeGotThis!, a website, app, and chatbot that will help us get through coronavirus isolation and support our wellbeing. </p>
+      <p>The age of coronavirus has affected everyone around the world. We are all going through a lot right now – old or young, working or not.</p>
+      <p>Wherever you are, we want you to know that together <b>WeGotThis!</b>.</p>
+      <br/><br/>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <p class="lead">Are you feeling isolated? Register below and someone will call you (we won't share your number)</p>
-
-    <%= link_to 'Register', new_user_registration_path,  class:"btn btn-primary btn-lg light-blue"  %>
-    <br/>
-    <p>Already registered? <%= link_to 'Edit my details', root_path %></p>
+      <p class="lead">Are you feeling isolated? Register below and someone will call you for a chat (we won't share your number)</p>
+      <%= link_to 'Register', new_user_registration_path,  class:"btn btn-primary btn-lg light-blue"  %>
+      <br/><br/>
+      <p>Already registered? <%= link_to 'Edit my details', root_path %></p>
+      </div>
+    <div class="col">
+      <p class="lead">Our chatbot will help you find resources, connect you to others, and enable you to volunteer to support your wellbeing and the wellbeing of others. </p>
+      <%= image_tag("Chatbot.gif")%>
     </div>
-  <div class="col">
-
-      <p class="lead">Our chatbot will help you find resources, connect you to other people, enable you to volunteer to support your wellbeing and the wellbeing of others. </p>
-      <p>We hope you find WeGotThis helpful and we welcome suggestions, because we are all in this together and your ideas will definitely help others. </p>
-  
-    <%= image_tag("Chatbot.gif")%>
-    
   </div>
+  <div class="row">
+    <p>We hope you find WeGotThis helpful and we welcome suggestions, because we are all in this together and your ideas will definitely help others. </p>
   </div>
 </main>
 
